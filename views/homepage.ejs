@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<script type="text/javascript" src="ejs_production.js"></script>
+<html>
+  <head>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+	<body>
+		<h1>Select login method</h1>
+		<form action="http://localhost:3000/users/local-login" method="get">
+			<input type="submit" value="Sign In">
+		</form>
+		<form action="http://localhost:3000/users/local-signup" method="get">
+			<input type="submit" value="Sign Up">
+		</form>
+		<p><%=result%><p>
+	</body>
+</html>

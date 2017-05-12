@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<script type="text/javascript" src="ejs_production.js"></script>
+<html>
+  <head>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+	<body style="background-color:WhiteSmoke">
+		<h1>Welcome <%=users.name%></h1><br>
+		<p>Your email address is <%=users.email%></p>
+		<form action="http://localhost:3000/logout" method="get">
+			<input type="submit" value="Logout">
+		</form>
+	</body>
+</html>
